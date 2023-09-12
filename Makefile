@@ -13,7 +13,7 @@ run:
 	@read -p "Enter a random port between 1024 & 65536: " sock_in; \
 	./web_server_sol $$sock_in ./myLogs 100 100 50 50
 
-# # UTILITIES:
+### UTILITIES:
 force_kill:
 	@echo -n "Force Killing web_server proc PID: "; ps -C "web_server" -o pid=
 	@ps -C "web_server" -o pid= | xargs kill -9
